@@ -1,0 +1,23 @@
+{
+  "name": "azure-cosmosdb",
+  "displayName": "Azure Cosmos DB",
+  "version": "0.1.0",
+  "description": "Azure Cosmos DB plugin for Claude Code. Connects to the Azure Cosmos DB MCP Toolkit for database operations, schema discovery, and vector search. Includes 60+ best-practice rules covering data modeling, partition key design, query optimization, SDK usage, indexing, throughput management, global distribution, monitoring, and design patterns.",
+  "author": {
+    "name": "Azure Cosmos DB",
+    "url": "https://azure.microsoft.com/products/cosmos-db"
+  },
+  "homepage": "https://github.com/AzureCosmosDB/MCPToolKit",
+  "repository": "https://github.com/AzureCosmosDB/cosmosdb-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "azure",
+    "cosmos-db",
+    "cosmosdb",
+    "nosql",
+    "database",
+    "vector-search",
+    "mcp",
+    "best-practices"
+  ]
+}
