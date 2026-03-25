@@ -3,9 +3,9 @@ name: cosmosdb-best-practices
 license: MIT
 description: |
   Azure Cosmos DB performance optimization and best practices guidelines for NoSQL,
-  partitioning, queries, and SDK usage. Use when writing, reviewing, or refactoring
-  code that interacts with Azure Cosmos DB, designing data models, optimizing queries,
-  or implementing high-performance database operations.
+  partitioning, queries, SDK usage, and vector search. Use when writing, reviewing,
+  or refactoring code that interacts with Azure Cosmos DB, designing data models,
+  optimizing queries, or implementing high-performance database operations.
 metadata:
   author: cosmosdb-agent-kit
   version: "1.0.0"
