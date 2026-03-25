@@ -1,6 +1,7 @@
 {
   "mcpServers": {
     "azure-cosmosdb": {
+      "type": "http",
       "url": "${COSMOSDB_MCP_SERVER_URL}/mcp",
       "headers": {
         "Authorization": "Bearer ${COSMOSDB_MCP_JWT_TOKEN}"
