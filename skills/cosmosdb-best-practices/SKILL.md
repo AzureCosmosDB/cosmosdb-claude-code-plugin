@@ -20,7 +20,7 @@ refactoring and code generation.
 73 individual rule files are in the [rules/](./rules/) directory, one file per rule,
 synced from the [AzureCosmosDB/cosmosdb-agent-kit](https://github.com/AzureCosmosDB/cosmosdb-agent-kit).
 Load only the relevant rule file(s) when answering a question — do NOT load all files at once.
-Run `/azure-cosmosdb:generate-skills` to sync with the latest rules from the agent-kit.
+Run `/azure-cosmos-db-assistant:generate-skills` to sync with the latest rules from the agent-kit.
 
 ## When to Apply
 

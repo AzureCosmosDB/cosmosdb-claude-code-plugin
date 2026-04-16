@@ -84,7 +84,7 @@ The `.mcp.json` file references the environment variables you set in Step 3. Cla
 Alternatively, run the setup command in Claude Code:
 
 ```
-/azure-cosmosdb:cosmos-setup
+/azure-cosmos-db-assistant:cosmos-setup
 ```
 
 ## Step 5: Verify the Connection

@@ -2,6 +2,18 @@
 
 The Azure Cosmos DB plugin for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) gives Claude deep expertise in Azure Cosmos DB best practices, data modeling, query optimization, and SDK usage — ready to use immediately after install with no configuration required.
 
+## Install
+
+Install from the official Anthropic marketplace:
+
+```
+/plugin install azure-cosmos-db-assistant@claude-plugins-official
+/reload-plugins
+```
+
+> **Note:** Earlier versions of this plugin used the namespace `/azure-cosmosdb:*`.
+> The plugin now uses `/azure-cosmos-db-assistant:*` to align with the official marketplace entry and improve discoverability.
+
 ## Works Out of the Box
 
 This plugin installs cleanly with **no required environment variables, no external services, and no auto-running binaries**. All skills, the expert agent, and commands are available immediately.
@@ -25,9 +37,9 @@ After installing the plugin, try these in Claude Code:
 ### Commands
 
 ```
-/azure-cosmosdb:cosmos-review     # Review your code for Cosmos DB best practices
-/azure-cosmosdb:generate-skills   # Regenerate skills from upstream agent-kit
-/azure-cosmosdb:cosmos-setup      # Configure optional MCP Toolkit connection
+/azure-cosmos-db-assistant:cosmos-review     # Review your code for Cosmos DB best practices
+/azure-cosmos-db-assistant:generate-skills   # Regenerate skills from upstream agent-kit
+/azure-cosmos-db-assistant:cosmos-setup      # Configure optional MCP Toolkit connection
 ```
 
 ### Agent
@@ -86,7 +98,7 @@ Skills are derived from the [AzureCosmosDB/cosmosdb-agent-kit](https://github.co
 To regenerate skills after the upstream agent-kit updates:
 
 ```
-/azure-cosmosdb:generate-skills
+/azure-cosmos-db-assistant:generate-skills
 ```
 
 ## Contributing
