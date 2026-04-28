@@ -1,0 +1,17 @@
+{
+  "name": "azure-cosmos-db-claude-plugin",
+  "owner": {
+    "name": "Azure Cosmos DB"
+  },
+  "metadata": {
+    "description": "Official Azure Cosmos DB plugin for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "azure-cosmos-db-assistant",
+      "description": "Expert assistant for Azure Cosmos DB. Includes best-practice guidance for data modeling, partition key design, query optimization, SDK usage, indexing, throughput management, global distribution, monitoring, design patterns, vector search, RAG, and optional MCP Toolkit integration for live database operations.",
+      "source": "./"
+    }
+  ]
+}

@@ -18,5 +18,8 @@
     "database",
     "vector-search",
     "best-practices"
+  ],
+  "skills": [
+    "./skills/cosmosdb-best-practices"
   ]
 }
