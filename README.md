@@ -20,7 +20,7 @@ This plugin installs cleanly with **no required environment variables, no extern
 
 ## What's Included
 
-- **Skills** — 73 best-practice rules across 10 categories covering data modeling, partition key design, query optimization, SDK patterns, indexing, throughput, global distribution, monitoring, design patterns, and vector search — sourced from the [cosmosdb-agent-kit](https://github.com/AzureCosmosDB/cosmosdb-agent-kit)
+- **Skills** — 127 best-practice rules across 13 categories covering data modeling, partition key design, query optimization, SDK patterns, indexing, throughput, global distribution, monitoring, design patterns, developer tooling, vector search, full-text search, and security — sourced from the [cosmosdb-agent-kit](https://github.com/AzureCosmosDB/cosmosdb-agent-kit)
 - **Agent** — A specialized Cosmos DB expert agent for in-depth guidance
 - **Commands** — Code review and skill regeneration commands
 
@@ -73,17 +73,20 @@ cosmosdb-claude-code-plugin/
 ├── skills/
 │   └── cosmosdb-best-practices/
 │       ├── SKILL.md                # Skill manifest and rule index
-│       └── rules/                  # 73 individual best-practice rule files
+│       └── rules/                  # 127 individual best-practice rule files
 │           ├── model-*.md          # Data modeling (11 rules)
-│           ├── partition-*.md      # Partition key design (7 rules)
-│           ├── query-*.md          # Query optimization (6 rules)
-│           ├── sdk-*.md            # SDK best practices (19 rules)
-│           ├── index-*.md          # Indexing strategies (5 rules)
+│           ├── partition-*.md      # Partition key design (8 rules)
+│           ├── query-*.md          # Query optimization (12 rules)
+│           ├── sdk-*.md            # SDK best practices (40 rules)
+│           ├── index-*.md          # Indexing strategies (7 rules)
 │           ├── throughput-*.md     # Throughput & scaling (5 rules)
 │           ├── global-*.md         # Global distribution (6 rules)
 │           ├── monitoring-*.md     # Monitoring & diagnostics (5 rules)
-│           ├── pattern-*.md        # Design patterns (3 rules)
-│           └── vector-*.md         # Vector search (6 rules)
+│           ├── pattern-*.md        # Design patterns (14 rules)
+│           ├── tooling-*.md        # Developer tooling (2 rules)
+│           ├── vector-*.md         # Vector search (6 rules)
+│           ├── fts-*.md            # Full-text search (6 rules)
+│           └── security-*.md       # Security (5 rules)
 ├── assets/
 │   └── logo.svg                    # Plugin logo
 ├── SETUP.md                        # Optional MCP Toolkit integration guide
