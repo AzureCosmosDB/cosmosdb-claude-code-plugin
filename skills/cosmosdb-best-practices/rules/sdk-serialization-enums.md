@@ -91,6 +91,30 @@ public class Order
 3. Querying it with a filter
 4. Checking the raw JSON in Data Explorer
 
+## Python: Pydantic `mode="json"` for Cosmos DB Writes
+
+The Python `azure-cosmos` SDK serializes request bodies with `json.dumps(data)` and **no custom encoder**. Pydantic v2's default `model_dump()` returns native Python objects (`datetime`, `UUID`, `Decimal`, etc.) that raise `TypeError: Object of type X is not JSON serializable` when passed to `create_item`, `upsert_item`, or `replace_item`.
+
+Always pass `mode="json"` so Pydantic converts these to JSON-safe primitives first.
+
+### Incorrect
+
+```python
+class ScoreDoc(BaseModel):
+    id: str
+    submitted_at: datetime = Field(alias="submittedAt")
+
+# ❌ raises TypeError: Object of type datetime is not JSON serializable
+await container.create_item(body=doc.model_dump(by_alias=True))
+```
+
+### Correct
+
+```python
+# ✅ datetime → ISO-8601 string, UUID → hex string, Decimal → string
+await container.create_item(body=doc.model_dump(by_alias=True, mode="json"))
+```
+
 ## Warning Signs
 
 - Queries return empty results but you know matching documents exist
