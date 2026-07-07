@@ -2,7 +2,7 @@
 
 > **This setup is optional and only required for advanced live Azure Cosmos DB integration via MCP. The plugin works out of the box without completing these steps.**
 
-The agent, commands, and 73 best-practice rules are available immediately after install with no configuration.
+The agent, commands, and 127 best-practice rules are available immediately after install with no configuration.
 
 For users who want to connect Claude Code to a live Azure Cosmos DB account, the optional [Azure Cosmos DB MCP Toolkit](https://github.com/AzureCosmosDB/MCPToolKit) integration adds the ability to query databases, discover schemas, search documents, and perform vector search directly from Claude Code.
 

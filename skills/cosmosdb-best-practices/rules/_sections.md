@@ -37,12 +37,28 @@
 
 **Impact:** LOW-MEDIUM  
 **Description:** Proactive monitoring catches issues before they impact users. Diagnostics enable root cause analysis.
+
 ## 9. Design Patterns (pattern)
 
 **Impact:** HIGH  
 **Description:** Architecture patterns for common scenarios like cross-partition query optimization, event sourcing, and multi-tenant designs.
 
-## 10. Vector Search (vector)
+## 10. Developer Tooling (tooling)
+
+**Impact:** MEDIUM  
+**Description:** Tooling guidance improves local development, inspection workflows, and developer productivity without replacing core SDK or data model guidance.
+
+## 11. Vector Search (vector)
 
 **Impact:** HIGH  
 **Description:** Vector search configuration enables AI-powered semantic search and RAG patterns. Proper embedding storage, indexing, and query optimization are essential for performance and accuracy.
+
+## 12. Full-Text Search (fts)
+
+**Impact:** HIGH  
+**Description:** Native full-text search (FTS) provides inverted-index-backed keyword matching, BM25 relevance ranking, and language-aware tokenization. Requires three coordinated changes: an account-level capability flag, a container fullTextPolicy, and a fullTextIndexes entry in the indexing policy.
+
+## 13. Security (security)
+
+**Impact:** HIGH  
+**Description:** Secure authentication, network isolation, least-privilege access, and data protection for Cosmos DB accounts. Use Entra ID with managed identity instead of keys, restrict network access, assign minimum RBAC roles, and enable continuous backup for point-in-time restore.
