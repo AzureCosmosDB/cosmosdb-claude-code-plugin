@@ -14,6 +14,12 @@ Install from the official Anthropic marketplace:
 > **Note:** Earlier versions of this plugin used the namespace `/azure-cosmosdb:*`.
 > The plugin now uses `/azure-cosmos-db-assistant:*` to align with the official marketplace entry and improve discoverability.
 
+Install in Neotask from [Neotask Construct](https://construct.neotask.ai/p/microsoft-azure-cosmos-db-assistant) with the Neotask CLI, or from the Neotask desktop app under Agents > Skills > Add-ons:
+
+```
+neotask construct install microsoft-azure-cosmos-db-assistant
+```
+
 ## Works Out of the Box
 
 This plugin installs cleanly with **no required environment variables, no external services, and no auto-running binaries**. All skills, the expert agent, and commands are available immediately.
